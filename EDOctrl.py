@@ -12,6 +12,7 @@ def dhdt(t, h, A, beta, Fi):
     return ((Fi/A) - ((beta/A)*m.sqrt(h)))
 
 #Erro:
+#erro
 def erro(t, setpoint, h):
     return (setpoint- h)
 
