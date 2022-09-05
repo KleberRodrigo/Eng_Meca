@@ -10,8 +10,6 @@ plt.close('all') # Fecha gráficos
 #Derivada da função desejada:
 def dhdt(t, h, A, beta, Fi):
     return ((Fi/A) - ((beta/A)*m.sqrt(h)))
-#errp
-#erro
 #Erro:
 def erro(t, setpoint, h):
     return (setpoint- h)
