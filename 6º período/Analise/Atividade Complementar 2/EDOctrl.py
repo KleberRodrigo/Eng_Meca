@@ -1,3 +1,5 @@
+#autor do Progra : Kleber Rodrigo da Silva Junior
+
 from scipy.integrate import solve_ivp
 from scipy.integrate import quad
 from scipy.misc import derivative
