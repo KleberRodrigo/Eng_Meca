@@ -1,4 +1,4 @@
-#autor do Progra : Kleber Rodrigo da Silva Junior
+#Autor do Programa : Kleber Rodrigo da Silva Junior
 
 from scipy.integrate import solve_ivp
 from scipy.integrate import quad
