@@ -14,7 +14,7 @@ def dhdt(t, h, A, beta, Fi):
     return ((Fi/A) - ((beta/A)*m.sqrt(h)))
 #Erro:
 def erro(t, setpoint, h):
-    return (setpoint- h)
+    return (setpoint - h)
 
 #Constantes para o controlador PI:
 Kp = 1
@@ -30,7 +30,7 @@ h = 1
 
 #Parâmetros de simulação:
 t = 0.00
-tf = 5.00
+tf = 10.00
 step = 0.01
 
 #Vetores
@@ -41,7 +41,7 @@ t_eixo = []
 integral = 0
 
 #Altura desejada (ponto de equilíbrio):
-setpoint = 0.5
+setpoint = 0.45
 
 while(t < tf):
     #Controle:
@@ -61,7 +61,7 @@ while(t < tf):
     #Solução da EDO:
     sol = solve_ivp(dhdt, t_span=(t, t+step), y0=[h], method='RK45', t_eval=[t, t+step], args=(area, beta, u))
  
-    h = sol.y[0][-1] + np.random.normal(0, 0.002)
+    h = sol.y[0][-1] #+ np.random.normal(0, 0.002)
     #Tempo instantânio
     t += step
 
