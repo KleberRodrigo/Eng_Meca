@@ -6,9 +6,8 @@ Autor: Kleber Junior e Robson Junior
 """
 
 import numpy as np
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 import control as ct
-import math as m
 
 plt.close('all')
 
@@ -23,10 +22,7 @@ print('------------------------------------------------------------------------'
 print('\n Função de transferência \n')
 
 s = ct.tf('s')                         #Cria uma variável 's' para permitir operações de álgebra para sistemas SISO
-#G = (s + 3)/(s**2 + 6*s + 5)           #Definindo a função de transferencia
-num=[1,3]
-den=[1,6,5]
-G=ct.TransferFunction(num, den)
+G = (s + 3)/(s**2 + 6*s + 5)           #Definindo a função de transferencia
 G_s = ct.tf2ss(G)
 print(G)
 
@@ -45,4 +41,3 @@ print('\n Representação em espaço de estados na forma Diagonal\n')
 [A,B] = ct.canonical_form(G_s, form='modal')       # Diagonal
 print(A)
 print('------------------------------------------------------------------------')
-
