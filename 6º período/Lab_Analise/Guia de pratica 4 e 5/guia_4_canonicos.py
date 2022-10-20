@@ -6,18 +6,9 @@ Autor: Kleber Junior e Robson Junior
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
 import control as ct
 
-plt.close('all')
-
-t0 = 0                           # Tempo inicial
-tf = 1000                        # Tempo final
-t = np.linspace(t0, tf, 1999)    # Instantes que desejo ter a solucao
-
-
 #criando a função de tranferencia
-
 print('------------------------------------------------------------------------')
 print('\n Função de transferência \n')
 
