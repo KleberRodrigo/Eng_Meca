@@ -4,7 +4,6 @@ Criado em 19/10/2022
 Autor: Kleber Junior e Robson Junior
  
 """
-
 import numpy as np
 import control as ct
 
