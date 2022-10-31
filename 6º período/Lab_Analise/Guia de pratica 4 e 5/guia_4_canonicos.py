@@ -6,6 +6,16 @@ Autor: Kleber Junior e Robson Junior
 """
 import numpy as np
 import control as ct
+<<<<<<< Updated upstream
+=======
+
+plt.close('all')
+
+t0 = 0                           # Tempo inicial
+tf = 1000                        # Tempo final
+t = np.linspace(t0, tf, 1999)    # Instantes que desejo ter a solucao
+
+>>>>>>> Stashed changes
 
 #criando a função de tranferencia
 print('------------------------------------------------------------------------')
