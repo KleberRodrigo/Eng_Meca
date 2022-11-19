@@ -2,11 +2,9 @@
 #@Alunos: Thiago Henrique de Faria Costa e Mateus Alves de Sales
 #@Data: 29/01/2022
 
-import  numpy as np                      #\    
-from    matplotlib import pyplot as plt   #\    
-import  control as ct                       #- Importando as bibliotecas necessárias para desenvolvimento do código
-import  statistics as sta                 #/ 
-import  math                             #/
+import  numpy as np
+from    matplotlib import pyplot as plt
+import  control as ct
 
 
 plt.close('all')
